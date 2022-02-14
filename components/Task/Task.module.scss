@@ -1,0 +1,46 @@
+@import "assets/scss/variables";
+@import "assets/scss/margins";
+@import "assets/scss/responsive";
+
+.Task {
+  background: #f6f3f1;
+  border-radius: 4px;
+  padding: 2.6rem;
+  width: 32rem;
+  margin-bottom: $margin-24;
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:hover .Actions {
+    display: block;
+  }
+
+  @include responsive($extra-large-desktop) {
+    height: 10rem;
+    width: 45rem;
+  }
+
+  .Actions {
+    position: absolute;
+    right: $margin-24;
+    top: $margin-16;
+    display: none;
+  }
+
+  .Taskname {
+    font-family: "Fira Bold", sans-serif;
+    font-size: 1.8rem;
+  }
+
+  .TagSection {
+    display: flex;
+  }
+}

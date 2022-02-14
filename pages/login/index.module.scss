@@ -1,0 +1,36 @@
+@import "assets/scss/margins";
+
+.Login {
+  display: flex;
+  height: 100vh;
+
+  .FormDiv {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .Form {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+
+      .Input {
+        margin-bottom: $margin-16;
+
+        &:last-of-type {
+          margin-bottom: $margin-32;
+        }
+      }
+
+      .Button {
+        height: 4.5rem;
+      }
+    }
+  }
+
+  .Image {
+    flex: 1;
+  }
+}

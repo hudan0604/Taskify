@@ -1,0 +1,27 @@
+@import "assets/scss/margins";
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+
+  .Input {
+    margin-bottom: $margin-16;
+
+    &:last-of-type {
+      margin-bottom: $margin-32;
+    }
+  }
+  .Textarea {
+    border: 1px solid #c3c0c0;
+    border-radius: 4px;
+    margin-bottom: 1.6rem;
+    font-family: "Fira Regular", sans-serif;
+    padding: 0.6rem;
+    font-size: 1.6rem;
+  }
+  .Button {
+    width: 12rem;
+  }
+}
